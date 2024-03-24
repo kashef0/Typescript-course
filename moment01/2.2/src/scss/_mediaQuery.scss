@@ -1,0 +1,62 @@
+@media only screen and (min-width : 999px) {
+    #new {
+        flex-direction: row;
+        align-items: flex-end;
+        .inputSpan{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .inputSpan.five {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+
+@media only screen and (max-width : 996px) {
+    .container .inputSpan{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    body {
+        background-color: #fff;
+    }
+    .container {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    #mainheader {
+        height: auto;
+        line-height: auto;
+        padding-bottom: 0;
+    }
+
+    #mainheader h1 { float: none; }
+
+    #new {
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    .inputSpan {
+        justify-content: start;
+    }
+
+    input[type="text"], select {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    td {
+        padding: 5px;
+        margin: 0;
+    }
+}
