@@ -17,7 +17,7 @@ list.innerHTML = sortsItems.map(kurs => `<table>
     <tr>
     <th scope="col">Kurscode</th>
     <th scope="col">Kursnamn</th>
-    <th scope="col">Progression</th>
+    <th scope="col" style="width:10%">Progression</th>
     <th scope="col">Webbsida</th>
     </tr>
 </thead>
@@ -25,7 +25,7 @@ list.innerHTML = sortsItems.map(kurs => `<table>
     <tr>
     <td scope="row" style="font-weight: 700; color: #a50000d4">${(kurs.id).toLocaleUpperCase()}</th>
     <td>${kurs.kursNamn.charAt(0).toLocaleUpperCase() + kurs.kursNamn.slice(1)}</td>
-    <td>${(kurs.progression).toLocaleUpperCase()}</td>
+    <td>${kurs.progression}</td>
     <td><a href="${kurs.kursUrl}">${kurs.kursNamn.substring(0,4)}</a></td>
     </tr>
 </tbody>
@@ -38,15 +38,15 @@ let inputUrl = <HTMLInputElement> document.getElementById("urlInput");
 
 let addBtn = <HTMLButtonElement> document.getElementById("addBtn");
 
+
 addBtn.addEventListener('click', addCourses);
 
-
 function addCourses(): void {
-    let id = inputId.value;
-    let namn = inputName.value;
-    let progression = inputprogression.value.toLocaleUpperCase();
-    let url = inputUrl.value;
-
+    let id: string = inputId.value;
+    let namn: string = inputName.value;
+    let progression: string = inputprogression.value.toLocaleUpperCase();
+    let url: string = inputUrl.value;
+    
     if (!id || !namn || !progression || !url) {
         event?.preventDefault();
         if (!id) {
@@ -96,6 +96,7 @@ function addCourses(): void {
 
         return;
     }
+    
     return;
 }
 
@@ -104,9 +105,7 @@ function courseStorage(sortsItems: kurs[]): any {
     localStorage.setItem("items", JSON.stringify(sortsItems));
 }
 
-
 let remover = <HTMLButtonElement> document.getElementById("clearbutton");
-
 remover.addEventListener('click', clearItems);
 
 function clearItems(): void {
