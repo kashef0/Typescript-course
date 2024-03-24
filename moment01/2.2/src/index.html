@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>DT208G - Laboration 1.2</title>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/src/scss/main.scss">
+    <script src="/src/js/main.ts" type="module"></script>
+</head>
+
+<body>
+    <header id="mainheader">
+        <div class="contain">
+            <h1 id="logo">DT208G </h1>
+        </div>
+        <!-- /.contain -->
+    </header>
+
+    <div class="container">
+        <h2>Laboration 1.2 - Grunderna i TypeScript</h2>
+        <form id="new">
+            <span class="inputSpan one">
+                <label for="Course_ID">kurskod:</label>
+                <input type="text" id="Course_ID" placeholder="t.ex DT208G"> 
+            </span>
+            <span class="inputSpan two">
+                <label for="Course_Name">kursnamn:</label>
+                <input type="text" id="Course_Name" placeholder="t.ex TypeScript">         <!--    &nbsp -->
+            </span>
+            <span class="inputSpan three">
+                <label for="Progression">progression:</label>
+                <select id="Progression">
+                    <option value="">välj ett alternativ</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                <!-- <input type="text" id="Progression">         -->
+            </span>
+            <span class="inputSpan four">
+                <label for="urlInput">Webbsida:</label>
+                <input type="text" id="urlInput" placeholder="https://elearn20.miun.se">
+            </span>
+            <span class="inputSpan five">
+                <button class="btn" id="addBtn">Lägg till kurs</button>
+            </span>
+        </form>
+        <p id="message"></p> 
+        
+        <h3>Kursinformation:</h3>
+        <section id="kurs_info">
+        </section>
+        <div class="clearBTN">
+            <button id="clearbutton" class="btn">Rensa kurser</button>
+        </div>
+        <footer>
+            <p>Laborationsuppgift moment 1.2 för kursen DT208G, Programmering i TypeScript.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
