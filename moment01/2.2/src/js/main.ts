@@ -1,4 +1,4 @@
-
+import { cuter } from "./wordCuter";
 interface kurs {
     id: string;
     kursNamn: string;
@@ -26,7 +26,7 @@ list.innerHTML = sortsItems.map(kurs => `<table>
     <td scope="row" style="font-weight: 700; color: #a50000d4">${(kurs.id).toLocaleUpperCase()}</th>
     <td>${kurs.kursNamn.charAt(0).toLocaleUpperCase() + kurs.kursNamn.slice(1)}</td>
     <td>${kurs.progression}</td>
-    <td><a href="${kurs.kursUrl}">${kurs.kursNamn.substring(0,4)}</a></td>
+    <td><a href="${kurs.kursUrl}">${cuter(kurs.kursNamn).toLocaleUpperCase()}</a></td>
     </tr>
 </tbody>
 </table>`).join("");
@@ -103,6 +103,7 @@ function addCourses(): void {
 
 function courseStorage(sortsItems: kurs[]): any {
     localStorage.setItem("items", JSON.stringify(sortsItems));
+    return "proccesen införts inte";
 }
 
 let remover = <HTMLButtonElement> document.getElementById("clearbutton");
