@@ -146,7 +146,7 @@ function showCourses(): void {
                             <td id="Course_ID_${index}" disabled>${kurs.id.toLocaleUpperCase()}</td>
                             <td id="Course_Name_${index}" disabled>${kurs.kursNamn.toLocaleUpperCase()}</td>
                             <td id="Progression_${index}" disabled>${kurs.progression}</td>
-                            <td id="urlInput_${index}" disabled><a href="${kurs.kursUrl}">${cuter(kurs.kursUrl).toUpperCase()}</a></td>
+                            <td id="urlInput_${index}" disabled><a href="${kurs.kursUrl}">${cuter(kurs.kursNamn).toUpperCase()}</a></td>
                             <td><button class="updateBtn" id="updateButton_${index}" value="ändra">Ändra</button></td>
                         </tr>
                     </tbody>
