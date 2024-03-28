@@ -138,7 +138,7 @@ function showCourses(): void {
                             <th scope="col">Kursnamn</th>
                             <th scope="col" style="width:10%">Progression</th>
                             <th scope="col">Webbsida</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">Handling</th>
                         </tr>
                     </thead>
                     <tbody>
