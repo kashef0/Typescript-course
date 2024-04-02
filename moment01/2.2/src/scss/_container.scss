@@ -92,8 +92,8 @@ label {
 
 #kurs_info {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    overflow-x: auto;
 }
 
 #kurs_info table {
@@ -109,4 +109,10 @@ td {
     text-align: center;
     line-height: 1.4em;
 }
+
+.inputField {
+    display: inline;
+    visibility: collapse;
+}
+
 }
