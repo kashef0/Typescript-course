@@ -1,0 +1,9 @@
+#mainheader {
+    height: 50px;
+    line-height: 50px;
+    padding-bottom: 4px;
+    background-color: darken(rgb(93, 193, 255), 40%);
+    color: #ffffff;
+
+    .contain { width: 100%; max-width: 1020px; margin: 0 auto;}
+}

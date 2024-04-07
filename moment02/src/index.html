@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.scss">
+    <script src="./js/main.ts" type="module"></script>
+    <title>TypeScript</title>
+</head>
+
+<body>
+    <header id="mainheader">
+        <div class="contain">
+            <h1 id="logo">DT208G</h1>
+        </div>
+    </header>
+    <div class="container"> 
+        <form id="todoForm" >
+            <h2>Att Göra List</h2>
+            <label for="task">Att göra:</label>
+            <input type="text" id="task" name="task" required><br><br>
+            <label for="priority">Prioritet:</label>
+            <select id="priority" name="priority" required>
+                <option value="5">Välj prioritet</option>
+                <option value="1">Hög</option>
+                <option value="2">Mellan</option>
+                <option value="3">Låg</option>
+            </select><br><br>
+            <button type="submit" class="btn">Lägg till</button>
+            <button id="clearbutton" class="btn" type="submit">Rensa Alla</button>
+        </form>
+        <div id="todoList"></div>
+    </div>
+</body>
+
+</html>

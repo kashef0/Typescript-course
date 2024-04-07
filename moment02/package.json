@@ -1,0 +1,19 @@
+{
+  "name": "moment02",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --open chrome",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Mohamed Abokashef",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0",
+    "typescript": "^5.4.3"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
