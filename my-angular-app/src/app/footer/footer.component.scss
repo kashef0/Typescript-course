@@ -1,0 +1,23 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    background-color: #38a6a6;
+    color: #222b2f;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+
+    #time::before {
+        content: "&& ";
+        
+    }
+
+    #change_color {
+        color: rgb(221, 228, 27);
+    }
+}
