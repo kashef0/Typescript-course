@@ -1,1 +1,13 @@
-<p>converter works!</p>
+<div id="container">
+    <h2>Konvertera Enheter</h2>
+    <div class="app">
+        <label for="meterInput">Ange nummer: </label>
+        <input type="number" id="meterInput" [(ngModel)]="meter">
+        <p class="Result">Result: {{ resultatat }}</p>
+    </div>
+    <div class="btn">
+        <button (click)="meterToFeet()">konvertera till Feet</button> 
+        <button (click)="temperature()">konvertera till Fahrenheit</button>
+    </div>
+</div>
+
