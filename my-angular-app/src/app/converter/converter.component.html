@@ -1,13 +1,27 @@
+
+
+
+
+
 <div id="container">
     <h2>Konvertera Enheter</h2>
-    <div class="app">
+    <div class="app" ng-app="">
+        <form class="checkBox">
+            <h3 class="caption">Välj vad du vill göra:</h3><br> 
+            <input type="radio" [(ngModel)]="myVar" [ngModelOptions]="{standalone: true}" value="konvertera till Feet">konvertera till Feet
+            <input type="radio" [(ngModel)]="myVar" [ngModelOptions]="{standalone: true}" value="konvertera till Fahrenheit">konvertera till Fahrenheit
+        </form><br>
         <label for="meterInput">Ange nummer: </label>
-        <input type="number" id="meterInput" [(ngModel)]="meter">
+        <input type="number" ng-model="myName" id="meterInput" placeholder="ange nummer...." [(ngModel)]="meter" required>
         <p class="Result">Result: {{ resultatat }}</p>
     </div>
-    <div class="btn">
-        <button (click)="meterToFeet()">konvertera till Feet</button> 
-        <button (click)="temperature()">konvertera till Fahrenheit</button>
+    <div [ngSwitch]="myVar" class="btn">
+        <div *ngSwitchCase="'konvertera till Feet'">
+            <button (click)="meterToFeet()">konvertera till Feet</button> 
+        </div>
+        <div *ngSwitchCase="'konvertera till Fahrenheit'">
+            <button (click)="temperature()">konvertera till Fahrenheit</button>
+        </div>
     </div>
 </div>
 
