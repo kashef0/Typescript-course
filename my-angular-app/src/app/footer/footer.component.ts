@@ -1,19 +1,16 @@
+import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
   
-  year!: number;
-  hour!: string;
-  minute!: string;
-  second!: string;
-
   constructor() {
     this.update_time();
 
@@ -22,16 +19,9 @@ export class FooterComponent {
     }, 1000);
 
   }
-
+  currentTime!: any;
   update_time() {
-    this.year = new Date().getFullYear();
-    const currentTime =  new Date();
-    this.hour = this.addZero(currentTime.getHours());
-    this.minute = this.addZero(currentTime.getMinutes());
-    this.second = this.addZero(currentTime.getSeconds());
+    this.currentTime =  new Date();
   }
 
-  public addZero(number: number): string {
-    return number < 10 ? "0" + number: "" + number;
-  }
 }

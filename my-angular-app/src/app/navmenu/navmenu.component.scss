@@ -7,11 +7,13 @@ $font_family_main: "Roboto Condensed", sans-serif;
 header {
     position: relative;
     background-color: #2c353a;
+    
 }
 
 header ul.nav {
     overflow: hidden;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 header ul.nav li {
@@ -52,7 +54,7 @@ header.active ul.nav li a {
 button.menuBTN {
     position: absolute;
     top: 2.8em; 
-    left: calc(50% - 2.8em); 
+    left: calc(25% - 2.8em); 
     width: 4.6em;
     height: 2.7em;
     font-family: $font_family_main;

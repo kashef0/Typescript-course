@@ -2,8 +2,6 @@
 
 $font_family_main: "Roboto Condensed", sans-serif;
 
-
-
 #container {
     width: 100%;
     display: flex;
@@ -13,6 +11,7 @@ $font_family_main: "Roboto Condensed", sans-serif;
     background-color: whitesmoke;
     margin-top: 4em;
     font-family: $font_family_main;
+    height: 100vh;
 
     .app {
         width: 50%;
@@ -59,3 +58,4 @@ $font_family_main: "Roboto Condensed", sans-serif;
         }
     }
 }
+
