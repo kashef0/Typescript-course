@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-$font_family_main: "Roboto Condensed", sans-serif;
+
 
 #container {
     width: 100%;
@@ -10,8 +9,13 @@ $font_family_main: "Roboto Condensed", sans-serif;
     flex-direction: column;
     background-color: whitesmoke;
     margin-top: 4em;
-    font-family: $font_family_main;
-    height: 100vh;
+    
+
+    .intro {
+        width: 50%;
+        padding: 1em;
+        font-size: 1.2em;
+    }
 
     .app {
         width: 50%;

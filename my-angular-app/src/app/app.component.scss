@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-$font_family_main: "Roboto Condensed", sans-serif;
+
+
 
 html.mdl-js {
-    position: relative;
-    font-family: $font_family_main;
+    // position: relative;
+    
     margin: 0;
     padding: 0;
     max-width: 1600px;
     line-height: 1.4em;
 }
 
-
+main {
+    width: 100%;
+}

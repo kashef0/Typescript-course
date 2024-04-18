@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 $font_family_main: "Roboto Condensed", sans-serif;
 
@@ -70,6 +69,7 @@ button.menuBTN {
     border-bottom-left-radius: 0.6em; 
     border-bottom-right-radius: 0.6em; 
     transition: all 0.25s ease;
+    z-index: 100;
 }
 
 button.menuBTN:hover {
