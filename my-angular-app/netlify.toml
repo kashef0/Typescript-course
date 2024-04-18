@@ -1,15 +1,22 @@
-[build]
-  command = "npm install --legacy-peer-deps"
-  publish = "my-angular-app/dist/my-angular-app/browser"
-
-[build.environment]
-  NODE_VERSION = "x.x.x"  # Specify your Node.js version if needed
 
 [build]
-  command = "ng build --prod"
-  publish = "my-angular-app/dist/my-angular-app/browser"
+    base = "/"
+    command = "ng build"
+    publish = "my-angular-app/dist/my-angular-app/browser"
+
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+
+[build]
+  base = "/"
+  command = "npm install --legacy-peer-deps"
+  publish = "my-angular-app/dist/my-angular-app/browser"
+
+[build]
+  base = "/"
+  command = "ng build --prod"
+  publish = "my-angular-app/dist/my-angular-app/browser"
