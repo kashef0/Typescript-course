@@ -2,7 +2,7 @@
 [build]
     base = "/"
     command = "ng build"
-    publish = "my-angular-app/dist/my-angular-app/browser"
+    publish = "dist/my-angular-app/browser"
 
 
 [[redirects]]
