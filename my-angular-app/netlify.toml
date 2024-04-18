@@ -1,6 +1,6 @@
 [build]
-  base = "/"
-  command = "ng build"
+  base = ""
+  command = "npm install && ng build"
   publish = "dist/my-angular-app/browser"
 
 [[redirects]]
