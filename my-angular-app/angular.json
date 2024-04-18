@@ -33,7 +33,8 @@
               "src/manifest.webmanifest",
               "src/manifest.webmanifest",
               "src/manifest.webmanifest",
-              "netlify.toml"
+              "netlify.toml",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.scss"
@@ -100,7 +101,8 @@
               "src/manifest.webmanifest",
               "src/manifest.webmanifest",
               "src/manifest.webmanifest",
-              "netlify.toml"
+              "netlify.toml",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.scss"
