@@ -1,3 +1,10 @@
+
+[build]
+base = "/"
+command = "ng build"
+publish = "dist/my-angular-app/browser
+
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
