@@ -1,0 +1,69 @@
+
+<div class="about_contanier">
+    <section>
+        <h2 class="rubrik">moment03 Angular</h2>
+    <p>
+        I denna uppgift skall jag skapa en webbplats som bygger på Angular. den ska ha god responsiv design med ett väl fungerande navigationssystem.
+        Webbplatsen skall innehålla minst tre undersidor (startsidan, converter, about). En av dessa sidorna skulle ha åtminstone en bild. I konverter sida kommer användaren
+        att konvertera enheter t.ex. från meter till fot eller från cilcuse till Fahrenheit
+    </p>
+    <h2>innehållsförteckning:</h2>
+    <ol>
+        <li>Installera Angular i mitt projekt.</li>
+        <li>skapade componenter (home, konverter, about, footer, navmenu, not_found).</li>
+        <li>Routing.</li>
+        <li>Implementera funktionalitet.</li>
+        <li>Testning och felsökning.</li>
+    </ol>
+    </section>
+    <section>
+        <h2>Arbetsproccess</h2>
+        <ol>
+            <li>För att skapa en Angular-webbplats krävde att jag först installerade Angular CLI. Genom detta verktyg kunde jag lätt
+                skapa och hantera mina Angular-projekt. jag installerade Angular CLI med hjälp av kommandot npm install -g
+                &#64;angular/cli genom terminalen.</li>
+            <li>
+                För att skapa komponenter använde jag följande kommandot ng generate componoent filnamn när komponenten skapade
+                kommer den att vara en del av användargränssnittet för applikation. I angular varje komponent består av tre
+                huvudsakliga filer (en TypeScript-fil som innehåller logik och en HTML-mall för presentation och en scss-fill för
+                att stila html-mallen==> man får välja mellan css, scss eller sass.
+            </li>
+            <li>
+                Routing är avgörande inom Angular-programmet som hjälper till att bläddra genom olika sidor eller vyer. Routing
+                konfigureras i Angular genom att definiera de rutter och associerar dem med olika komponenter. Vanligtvis görs detta
+                i app-routes.ts-filen.
+            </li>
+            <li>
+                Jag har genomfört specifik funktionalitet för varje komponent. det finns till exempel en konverteringskomponent
+                måste jag lägga kod för faktisk konvertering från enhet till enhet. t.ex. jag importerade FormsModule och använde
+                NgModel för att skapar en FormControl-instans från en domänmodell och binder den till ett formulärkontrollelement.
+            </li>
+            <li>
+                för att designa alla kompmnenter så kan jag göra det generalt så css kod jag skrev gäller för alla komponenter eller
+                om jag vill stilla spesficik komponenet, kan man göra den i sim egen komponenet eftersom varje komponent har sin
+                egen css fil och för att göra en responsiv design innebär att skapa en bra fungerande webbplats på alla enheter och
+                i olika bildskärmstorlekar allt från telefoner till stora skärmar. Detta kan uppnås genom användning av
+                CSS-mediafrågor och flexbox som vanligt.
+            </li>
+            <li>
+                När min app är klar, jag behöver att testköra den noggrant för att garantera att allt fungerar korrekt och ser bra
+                ut. vilket innebär att testa app på olika enheter och webbläsare och att säkerställa att alla funktionaltet fungerar
+                utan fel.
+            </li>
+        </ol>
+    </section>
+    <section>
+        <h2>slutsatser</h2>
+        <p>
+            Skapandet av en webbplats med Angular var inte lätt eftersom det kräver kännedom om ramen för Angular och dess flera
+            funktioner som moduler så man behöver läser doukmantion nogrran.
+        </p>
+        <p>
+            efter att jag skapade komponenter märkte jag att generera komponenter och konfigurera routing genom användningen av
+            Angular CLI leder till att spara mycket tidsande av många processer utvecklingen samt underhållning av webbplats
+            blir lättare eftersom vi skapar komponenter för varje del av webbplatsen t.ex en komponent för navmenu eller footer
+            med mera och en super fördel att vi kan använda dessa komponenterna på andra projekt.
+        </p>
+    </section>
+</div>
+
