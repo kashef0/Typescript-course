@@ -1,0 +1,14 @@
+<hr>
+<main>
+    <h1>Angular I</h1>
+    <div class="image_container">
+        @for(image of images; track $index) {
+
+        <figure class="image_box">
+            <figcaption>{{ image.description }}</figcaption>
+                <img src="{{image.url}}" alt="{{ image.description }}">
+        </figure>
+        }
+
+    </div>
+</main>
