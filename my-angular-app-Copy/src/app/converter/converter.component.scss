@@ -1,0 +1,65 @@
+
+
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding-top: 4em;
+    
+
+    .intro {
+        width: calc(50% + 10vw);
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    .app {
+        width: 50%;
+        background-color: aliceblue;
+        padding: 1em;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .caption {
+        padding: .25em;
+    }
+    .checkBox {
+        width: 100%;
+    }
+
+    #meterInput {
+        padding: .5em;
+    }
+
+    input:invalid {
+        background-color: pink;
+    }
+    input:valid {
+        background-color: lightseagreen;
+    }
+
+    .btn {
+        @extend .app;
+
+        button {
+            border: outset whitesmoke;
+            padding: .5em;
+            margin-right: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 5px 6px 3px rgb(124, 120, 120);
+
+            &:hover {
+                background-color: rgb(7, 90, 7);
+                border: inset grey;
+                color: white;
+            }
+        }
+    }
+}
+

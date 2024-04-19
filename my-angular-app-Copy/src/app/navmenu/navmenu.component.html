@@ -1,0 +1,11 @@
+
+<header [class.active]="isNavActive">
+    <button class="menuBTN" (click)="toggleNav()">
+        <span>></span>
+    </button>
+    <ul class="nav">
+        <li><a routerLink="/" routerLinkActive="current">Hemsida</a></li>
+        <li><a routerLink="/converter" routerLinkActive="current">omvandlare</a></li>
+        <li><a routerLink="/about" routerLinkActive="current">Om angular1</a></li>
+    </ul>
+</header>
